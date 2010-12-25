@@ -1,0 +1,3 @@
+= Referee
+
+See the project website for complete documentation: http://ethan.heroku.com/projects#referee

@@ -1,0 +1,15 @@
+### Referee.
+###   file: Rakefile
+
+require 'rubygems'
+require 'rake'
+require 'echoe'
+
+Echoe.new('referee', '0.3.0') do |p|
+  p.description = 'An easy way to communicate with the Dribbble API.'
+  p.url = 'http://ethan.heroku.com/projects#referee'
+  p.author = 'Ethan Turkeltaub'
+  p.email = 'ethan.turkeltaub@gmail.com'
+  p.ignore_pattern = []
+  p.development_dependencies = ['httparty']
+end

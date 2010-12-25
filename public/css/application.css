@@ -1,0 +1,216 @@
+/*
+	Arian Xhezairi
+	  file: /css/framework.css
+*/
+
+/*
+	= Appendix
+		1. Import
+		2. Media Queries
+		3.
+*/
+
+/* Import */
+@import url('http://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+/* Media Queries */
+@media all and (orientation:portrait){ /* Portrait */ }
+
+@media all and (orientation:landscape){ /* Landscape */ }
+
+@media screen and (max-device-width: 480px){ /* Mobile Browsers */
+	h1{
+		padding-bottom: 2em;
+	}
+	form input, form textarea{
+		width: 100%;
+	}
+
+	nav ul{
+		border: none;
+	}
+	hav ul li{
+		display: inline;
+	}
+	
+	p#top{
+		display: none;
+	}
+}
+
+/* Universal */
+body{
+	color: #666;
+	font: 11px "Droid Serif", Georgia, serif;
+}
+
+a{
+	color: #df2a2a; /*#93b45a;*/
+	text-decoration: none;
+}
+a:hover{
+	color: #666;
+}
+a[name]{
+	color: #333;
+}
+
+form input{
+	border: 1px solid #999;
+	font: 11px "Droid Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 0.455em;
+	width: 30%;
+}
+form input[type="submit"]{
+	background: #eee;
+	padding: 0.6em;
+	width: 15%;
+}
+form input:focus{
+	border: 1px solid #93b45a;
+	outline: none;
+}
+
+form textarea{
+	border: 1px solid #999;
+	font: 11px "Droid Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 0.455em;
+	height: 10em;
+	width: 60%;
+}
+form textarea:focus{
+	border: 1px solid #93b45a;
+	outline: none;
+}
+
+h1, h2, h3, h4{
+	color: #333;
+	font-weight: normal;
+}
+
+h1{
+	font-size: 1.455em;
+	margin-top: 1em;
+}
+h1 a{
+	color: #333;
+}
+h1 a:hover{
+	color: #666;
+}
+
+h2{
+	font-size: 2.182em;
+	margin-top: 5px;
+}
+
+h3{
+	font-size: 1.273em;
+	margin-top: 1.5em;
+}
+
+h4{
+	font-size: 1.091em;
+}
+
+p, ol, ul{
+	line-height: 1.364em;
+	margin: 1em 0;
+}
+
+ul{
+	margin-left: 1.364em;
+	padding-left: 0.455em;
+}
+
+::selection{
+	background: #df2a2a; /*#aad461;*/
+	color: #fff;
+	color: rgba(255, 255, 255, 1);
+}
+
+#contain{
+	margin: 7.273em 0;
+}
+
+/* Header */
+header{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 2em;
+}
+
+header ul{
+	border-left: 1px solid #eee;
+	margin: 0;
+	padding-left: 1em;
+}
+
+/* Body */
+#body{
+	margin: 5em auto;
+}
+
+#body article{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 4em;
+}
+
+#body article img{
+	border: 5px solid #eee;
+	max-width: 95%;
+}
+
+#body aside img[alt="Arian Xhezairi"]{
+	border-radius: 10em;
+}
+
+#body aside section nav{
+	margin-left: -1.7em;
+}
+
+#body aside section nav ul li{
+	margin-bottom: 1em;
+}
+#body aside section nav ul li a{
+	padding: 0.455em;
+}
+#body aside section nav ul li a:hover{
+	background: #eee;
+	color: #93b45a;
+}
+
+#body section:last-child{
+	border-bottom: none;
+}
+
+#body section h3#work{
+	border-bottom: 1px solid #eee;
+	color: #ccc;
+	font-size: 1.455em;
+	margin-bottom: 2em;
+	margin-top: 0.5em;
+	padding-bottom: 0.455em;
+}
+
+#body section p#top{
+	bottom: 2em;
+	font-size: 1.1em;
+	position: fixed;
+	right: 4.545em;
+}
+
+html.ie6, html.ie7, html.ie8{
+	display: block;
+}
+
+#ie{
+	display: none;
+}
+
+/* Footer */
+footer{
+	border-top: 1px solid #eee;
+	padding-top: 2em;
+}

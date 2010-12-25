@@ -1,0 +1,9 @@
+CHANGELOG
+LICENSE
+README.rdoc
+Rakefile
+lib/referee.rb
+lib/referee/httparty/icebox.rb
+lib/referee/players.rb
+lib/referee/shots.rb
+Manifest
