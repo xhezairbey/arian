@@ -48,7 +48,7 @@ post '/contact_form' do
   subject = params[:subject]
   body = params[:body]
 
-  contact = Gmail.new('arianxh', 'P3rs0nal1ty')
+  contact = Gmail.new('GMailName', 'pa55w0Rd')
   contact.deliver do
     to 'arian@xhezairi.com'
     subject name + ' (' + email + '): ' + subject
