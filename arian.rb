@@ -11,6 +11,7 @@
 # Dependencies
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/vendor/ruby-gmail-0.2.1/lib'
 require 'gmail.rb'
@@ -20,23 +21,24 @@ configure do
   set :environment, :production
   set :server, %w[thin mongrel webrick]
   set :port, 8080
+  set :haml, :format => :html5
 end
 
 # Controllers
 get '/' do
-  erb :profile
+  haml :profile
 end
 
 get '/work' do
-  erb :work
+  haml :work
 end
 
 get '/projects' do
-  erb :projects
+  haml :projects
 end
 
 get '/contact' do
-  erb :contact
+  haml :contact
 end
 
 # Contact Form
@@ -46,7 +48,7 @@ post '/contact_form' do
   subject = params[:subject]
   body = params[:body]
 
-  contact = Gmail.new('arian.cntct.frm', 'whywouldyoutryandstealmypassword?')
+  contact = Gmail.new('arianxh', 'P3rs0nal1ty')
   contact.deliver do
     to 'arian@xhezairi.com'
     subject name + ' (' + email + '): ' + subject
@@ -54,5 +56,5 @@ post '/contact_form' do
   end
   contact.logout
   
-  erb :contact_form
+  haml :contact_form
 end
