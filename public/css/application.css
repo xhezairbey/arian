@@ -164,6 +164,8 @@ header ul{
 
 #body aside img[alt="Arian Xhezairi"]{
 	border-radius: 10em;
+	-moz-border-radius: 10em;
+	-webkit-border-radius: 10em;
 }
 
 #body aside section nav{
